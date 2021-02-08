@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFDDDDDD"
+    tools:context=".MainActivity">
+
+    <!--weight계산은 height에 적힌 거 먼저계산!!하고, 나머지에서 weight비율로 먹음(웨이트 안적히면 0인거임)-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:inputType="text"
+        android:background="@drawable/bg_et"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:inputType="text"
+        android:background="@drawable/bg_et"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:background="@drawable/bg_et"
+        android:padding="8dp"
+        android:layout_margin="4dp"
+        android:gravity="top"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:textColor="#FF333333"
+        android:layout_margin="4dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/bg_btn_select"
+        android:onClick="clickBtn"/>
+    <!--앞 스키마 android 안되면 app으로 하삼,,백그라운드 같이 줄 때는 Tint를 @null줘야해-->
+</LinearLayout>
